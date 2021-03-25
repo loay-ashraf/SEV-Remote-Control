@@ -36,7 +36,7 @@ We used free MIT App Inventor as we lacked experience in Android app development
 
 ## Screenshots
 
-
+[Screenshots of the companion app](Software/Companion%20App/Screenshots)
 
 ## Built With
 - Atmel Studio 7 - The official AVR IDE
