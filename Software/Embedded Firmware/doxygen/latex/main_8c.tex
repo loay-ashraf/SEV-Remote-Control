@@ -1,0 +1,64 @@
+\hypertarget{main_8c}{}\section{main.\+c File Reference}
+\label{main_8c}\index{main.\+c@{main.\+c}}
+
+
+includes the main function  
+
+
+{\ttfamily \#include \char`\"{}U\+S\+A\+R\+T.\+h\char`\"{}}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{main_8c_a840291bc02cba5474a4cb46a9b9566fe}{main}} (void)
+\begin{DoxyCompactList}\small\item\em the main function \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{main_8c_a1737762c18769d6f24ab6f08db816636}\label{main_8c_a1737762c18769d6f24ab6f08db816636}} 
+char $\ast$ \mbox{\hyperlink{main_8c_a1737762c18769d6f24ab6f08db816636}{received\+\_\+ptr}}
+\begin{DoxyCompactList}\small\item\em Stores memory address of received command. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{main_8c_a2c559caab93e83086882bf2a584b5d34}\label{main_8c_a2c559caab93e83086882bf2a584b5d34}} 
+char \mbox{\hyperlink{main_8c_a2c559caab93e83086882bf2a584b5d34}{received\+\_\+str}} \mbox{[}10\mbox{]}
+\begin{DoxyCompactList}\small\item\em Stores data of received command. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{main_8c_a35da44c370602131b873e853934c34cf}\label{main_8c_a35da44c370602131b873e853934c34cf}} 
+uint8 \mbox{\hyperlink{main_8c_a35da44c370602131b873e853934c34cf}{i}}
+\begin{DoxyCompactList}\small\item\em Counter that iterates through received command. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+includes the main function 
+
+the main function periodically checks for incoming commands via U\+S\+A\+RT interface, if one is received it starts processing the command and takes the action that corresponds to the command received.
+
+\begin{DoxyAuthor}{Author}
+Loay Ashraf 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0.\+0 
+\end{DoxyVersion}
+\begin{DoxyPrecond}{Precondition}
+include \mbox{\hyperlink{_u_s_a_r_t_8h}{U\+S\+A\+R\+T.\+h}}, string.\+h and set F\+\_\+\+C\+PU in \mbox{\hyperlink{micro__config_8h}{micro\+\_\+config.\+h}} 
+\end{DoxyPrecond}
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000001}{Bug}}]no known bugs \end{DoxyRefDesc}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{micro__config_8h}{micro\+\_\+config.\+h}} 
+\end{DoxySeeAlso}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{main_8c_a840291bc02cba5474a4cb46a9b9566fe}\label{main_8c_a840291bc02cba5474a4cb46a9b9566fe}} 
+\index{main.\+c@{main.\+c}!main@{main}}
+\index{main@{main}!main.\+c@{main.\+c}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+the main function 
+
+look at the \mbox{\hyperlink{main_8c}{main.\+c}} description
+
+\begin{DoxyReturn}{Returns}
+exit status (1 or 0) 
+\end{DoxyReturn}

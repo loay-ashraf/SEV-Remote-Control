@@ -1,0 +1,166 @@
+\hypertarget{_u_s_a_r_t_8c}{}\section{U\+S\+A\+R\+T.\+c File Reference}
+\label{_u_s_a_r_t_8c}\index{U\+S\+A\+R\+T.\+c@{U\+S\+A\+R\+T.\+c}}
+
+
+includes function definition  
+
+
+{\ttfamily \#include \char`\"{}U\+S\+A\+R\+T.\+h\char`\"{}}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_u_s_a_r_t_8c_aad57089e8e6df3db3ddf901c43cc6972}{U\+S\+A\+R\+T\+\_\+init}} (uint8 umode, uint8 u2x, uint8 ch\+\_\+size, uint8 parity\+\_\+bit, uint8 stop\+\_\+bit)
+\begin{DoxyCompactList}\small\item\em initializes the U\+S\+A\+RT interface \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_u_s_a_r_t_8c_a0826b25854bf7ff20dff32cd4b9d0231}{U\+S\+A\+R\+T\+\_\+set\+\_\+baudrate}} (uint16 baudrate)
+\begin{DoxyCompactList}\small\item\em sets the baud rate for the U\+S\+A\+RT interface \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_u_s_a_r_t_8c_a9477920a260c72bf21f2c5e8a06bab20}{U\+S\+A\+R\+T\+\_\+enable}} (void)
+\begin{DoxyCompactList}\small\item\em enables the U\+S\+A\+RT interface \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_u_s_a_r_t_8c_a9c2ea9ba29262272148b0a03fb3bf2f5}{U\+S\+A\+R\+T\+\_\+\+Transmit\+\_\+chr}} (char data)
+\begin{DoxyCompactList}\small\item\em transmits 8-\/bit data \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_u_s_a_r_t_8c_a559d0ceb6f5cfc1e928269089cf48ec7}{U\+S\+A\+R\+T\+\_\+\+Transmit\+\_\+str}} (const char $\ast$data)
+\begin{DoxyCompactList}\small\item\em transmits a string of 8-\/bit data \end{DoxyCompactList}\item 
+char \mbox{\hyperlink{_u_s_a_r_t_8c_a2d72172472c9d4b933ea0679a28134ed}{U\+S\+A\+R\+T\+\_\+\+Receive\+\_\+chr}} (void)
+\begin{DoxyCompactList}\small\item\em receives 8-\/bit data \end{DoxyCompactList}\item 
+char $\ast$ \mbox{\hyperlink{_u_s_a_r_t_8c_ac493d991dea8232bd95474a81f4a29be}{U\+S\+A\+R\+T\+\_\+\+Receive\+\_\+str}} (void)
+\begin{DoxyCompactList}\small\item\em receives a string of 8-\/bit data \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+includes function definition 
+
+\begin{DoxyAuthor}{Author}
+Loay Ashraf 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0.\+0 
+\end{DoxyVersion}
+\begin{DoxyPrecond}{Precondition}
+include \mbox{\hyperlink{_u_s_a_r_t_8h}{U\+S\+A\+R\+T.\+h}} 
+\end{DoxyPrecond}
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000004}{Bug}}]no known bugs \end{DoxyRefDesc}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{_u_s_a_r_t_8h}{U\+S\+A\+R\+T.\+h}} 
+\end{DoxySeeAlso}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{_u_s_a_r_t_8c_a9477920a260c72bf21f2c5e8a06bab20}\label{_u_s_a_r_t_8c_a9477920a260c72bf21f2c5e8a06bab20}} 
+\index{U\+S\+A\+R\+T.\+c@{U\+S\+A\+R\+T.\+c}!U\+S\+A\+R\+T\+\_\+enable@{U\+S\+A\+R\+T\+\_\+enable}}
+\index{U\+S\+A\+R\+T\+\_\+enable@{U\+S\+A\+R\+T\+\_\+enable}!U\+S\+A\+R\+T.\+c@{U\+S\+A\+R\+T.\+c}}
+\subsubsection{\texorpdfstring{U\+S\+A\+R\+T\+\_\+enable()}{USART\_enable()}}
+{\footnotesize\ttfamily void U\+S\+A\+R\+T\+\_\+enable (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+enables the U\+S\+A\+RT interface 
+
+\begin{DoxyReturn}{Returns}
+none. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_u_s_a_r_t_8c_aad57089e8e6df3db3ddf901c43cc6972}\label{_u_s_a_r_t_8c_aad57089e8e6df3db3ddf901c43cc6972}} 
+\index{U\+S\+A\+R\+T.\+c@{U\+S\+A\+R\+T.\+c}!U\+S\+A\+R\+T\+\_\+init@{U\+S\+A\+R\+T\+\_\+init}}
+\index{U\+S\+A\+R\+T\+\_\+init@{U\+S\+A\+R\+T\+\_\+init}!U\+S\+A\+R\+T.\+c@{U\+S\+A\+R\+T.\+c}}
+\subsubsection{\texorpdfstring{U\+S\+A\+R\+T\+\_\+init()}{USART\_init()}}
+{\footnotesize\ttfamily void U\+S\+A\+R\+T\+\_\+init (\begin{DoxyParamCaption}\item[{uint8}]{umode,  }\item[{uint8}]{u2x,  }\item[{uint8}]{ch\+\_\+size,  }\item[{uint8}]{parity\+\_\+bit,  }\item[{uint8}]{stop\+\_\+bit }\end{DoxyParamCaption})}
+
+
+
+initializes the U\+S\+A\+RT interface 
+
+
+\begin{DoxyParams}{Parameters}
+{\em umode} & communication mode (Asynchronous or Synchronous). \\
+\hline
+{\em u2x} & speed mode (Normal speed or Double speed). \\
+\hline
+{\em ch\+\_\+size} & number of bits in the data frame. \\
+\hline
+{\em parity\+\_\+bit} & parity check mode (Parity or No parity). \\
+\hline
+{\em stop\+\_\+bit} & number of stop bits (one bit or two bits). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_u_s_a_r_t_8c_a2d72172472c9d4b933ea0679a28134ed}\label{_u_s_a_r_t_8c_a2d72172472c9d4b933ea0679a28134ed}} 
+\index{U\+S\+A\+R\+T.\+c@{U\+S\+A\+R\+T.\+c}!U\+S\+A\+R\+T\+\_\+\+Receive\+\_\+chr@{U\+S\+A\+R\+T\+\_\+\+Receive\+\_\+chr}}
+\index{U\+S\+A\+R\+T\+\_\+\+Receive\+\_\+chr@{U\+S\+A\+R\+T\+\_\+\+Receive\+\_\+chr}!U\+S\+A\+R\+T.\+c@{U\+S\+A\+R\+T.\+c}}
+\subsubsection{\texorpdfstring{U\+S\+A\+R\+T\+\_\+\+Receive\+\_\+chr()}{USART\_Receive\_chr()}}
+{\footnotesize\ttfamily char U\+S\+A\+R\+T\+\_\+\+Receive\+\_\+chr (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+receives 8-\/bit data 
+
+\begin{DoxyReturn}{Returns}
+received 8-\/bit data. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_u_s_a_r_t_8c_ac493d991dea8232bd95474a81f4a29be}\label{_u_s_a_r_t_8c_ac493d991dea8232bd95474a81f4a29be}} 
+\index{U\+S\+A\+R\+T.\+c@{U\+S\+A\+R\+T.\+c}!U\+S\+A\+R\+T\+\_\+\+Receive\+\_\+str@{U\+S\+A\+R\+T\+\_\+\+Receive\+\_\+str}}
+\index{U\+S\+A\+R\+T\+\_\+\+Receive\+\_\+str@{U\+S\+A\+R\+T\+\_\+\+Receive\+\_\+str}!U\+S\+A\+R\+T.\+c@{U\+S\+A\+R\+T.\+c}}
+\subsubsection{\texorpdfstring{U\+S\+A\+R\+T\+\_\+\+Receive\+\_\+str()}{USART\_Receive\_str()}}
+{\footnotesize\ttfamily char$\ast$ U\+S\+A\+R\+T\+\_\+\+Receive\+\_\+str (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+receives a string of 8-\/bit data 
+
+\begin{DoxyReturn}{Returns}
+pointer to the fist element of the received string. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_u_s_a_r_t_8c_a0826b25854bf7ff20dff32cd4b9d0231}\label{_u_s_a_r_t_8c_a0826b25854bf7ff20dff32cd4b9d0231}} 
+\index{U\+S\+A\+R\+T.\+c@{U\+S\+A\+R\+T.\+c}!U\+S\+A\+R\+T\+\_\+set\+\_\+baudrate@{U\+S\+A\+R\+T\+\_\+set\+\_\+baudrate}}
+\index{U\+S\+A\+R\+T\+\_\+set\+\_\+baudrate@{U\+S\+A\+R\+T\+\_\+set\+\_\+baudrate}!U\+S\+A\+R\+T.\+c@{U\+S\+A\+R\+T.\+c}}
+\subsubsection{\texorpdfstring{U\+S\+A\+R\+T\+\_\+set\+\_\+baudrate()}{USART\_set\_baudrate()}}
+{\footnotesize\ttfamily void U\+S\+A\+R\+T\+\_\+set\+\_\+baudrate (\begin{DoxyParamCaption}\item[{uint16}]{baudrate }\end{DoxyParamCaption})}
+
+
+
+sets the baud rate for the U\+S\+A\+RT interface 
+
+
+\begin{DoxyParams}{Parameters}
+{\em baudrate} & set baud rate in bits/sec. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_u_s_a_r_t_8c_a9c2ea9ba29262272148b0a03fb3bf2f5}\label{_u_s_a_r_t_8c_a9c2ea9ba29262272148b0a03fb3bf2f5}} 
+\index{U\+S\+A\+R\+T.\+c@{U\+S\+A\+R\+T.\+c}!U\+S\+A\+R\+T\+\_\+\+Transmit\+\_\+chr@{U\+S\+A\+R\+T\+\_\+\+Transmit\+\_\+chr}}
+\index{U\+S\+A\+R\+T\+\_\+\+Transmit\+\_\+chr@{U\+S\+A\+R\+T\+\_\+\+Transmit\+\_\+chr}!U\+S\+A\+R\+T.\+c@{U\+S\+A\+R\+T.\+c}}
+\subsubsection{\texorpdfstring{U\+S\+A\+R\+T\+\_\+\+Transmit\+\_\+chr()}{USART\_Transmit\_chr()}}
+{\footnotesize\ttfamily void U\+S\+A\+R\+T\+\_\+\+Transmit\+\_\+chr (\begin{DoxyParamCaption}\item[{char}]{data }\end{DoxyParamCaption})}
+
+
+
+transmits 8-\/bit data 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & 8-\/bit data to be transmitted. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_u_s_a_r_t_8c_a559d0ceb6f5cfc1e928269089cf48ec7}\label{_u_s_a_r_t_8c_a559d0ceb6f5cfc1e928269089cf48ec7}} 
+\index{U\+S\+A\+R\+T.\+c@{U\+S\+A\+R\+T.\+c}!U\+S\+A\+R\+T\+\_\+\+Transmit\+\_\+str@{U\+S\+A\+R\+T\+\_\+\+Transmit\+\_\+str}}
+\index{U\+S\+A\+R\+T\+\_\+\+Transmit\+\_\+str@{U\+S\+A\+R\+T\+\_\+\+Transmit\+\_\+str}!U\+S\+A\+R\+T.\+c@{U\+S\+A\+R\+T.\+c}}
+\subsubsection{\texorpdfstring{U\+S\+A\+R\+T\+\_\+\+Transmit\+\_\+str()}{USART\_Transmit\_str()}}
+{\footnotesize\ttfamily void U\+S\+A\+R\+T\+\_\+\+Transmit\+\_\+str (\begin{DoxyParamCaption}\item[{const char $\ast$}]{data }\end{DoxyParamCaption})}
+
+
+
+transmits a string of 8-\/bit data 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & pointer to the fist element of the string. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none. 
+\end{DoxyReturn}
